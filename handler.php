@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["act"]) && $_POST["act"
     $subject = "New form submission"; 
     $body = "$name $surname,\nEmail: $emailContact";
     
-    $headers = "From: your_email@example.com"; // Замените на ваш реальный адрес электронной почты
+    $headers = "From: your_email@example.com"; 
     $send = mail($to, $subject, $body, $headers);
     if (!$send) {
         echo json_encode(['success' => true]);
