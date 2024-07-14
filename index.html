@@ -250,20 +250,20 @@
 				<div class="success" style="display:none;">
 					<h6>Thanks! <br> Your message sent successfully</h6>
 				</div>
-				<form action="handler.php" method="post">
+				<form  method="POST">
 			    <input type="hidden" name="act" value="form">
 			    <div class="double">
 			        <div class="group__input validate regular">
 			            <p>First Name*</p>
-			            <input type="text" name="firstname">
+			            <input type="text" name="firstname" class="fname">
 			        </div>
 			        <div class="group__input validate regular">
 			            <p>Last Name*</p>
-			            <input type="text" name="surname">
+			            <input type="text" name="surname" class="sname">
 			        </div>
 			        <div class="group__input validate email">
 			            <p>Email*</p>
-			            <input type="text" name="email">
+			            <input type="text" name="email" class="email__field">
 			        </div>
 			        <div class="group__submit">
 			            <button type="submit">Request Deck</button>

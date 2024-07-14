@@ -62,10 +62,16 @@ $(document).ready(function(e){
 			}
 		});
 		if (errors == 0) {
+			var formData = {
+                name: $('.fname').val(),
+                surname: $('.sname').val(),
+                email: $('.email__field').val()
+            };
 			$.ajax({
-			    url: 'handler.php',
-                data: $(this).serialize(),
+			    url: 'https://formspree.io/f/mldrdnle',
+                data: formData,
                 type: 'POST',
+                 dataType: 'json',
 			    success: function(data) {
 			    	$('.popup__wrapper form').css('display' ,"none");
 			    	$('.success').fadeIn(300);
