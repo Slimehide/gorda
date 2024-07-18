@@ -68,7 +68,7 @@ $(document).ready(function(e){
                 email: $('.email__field').val()
             };
 			$.ajax({
-			    url: 'https://formspree.io/f/mldrdnle',
+			    url: 'https://formspree.io/f/mqazanoj',
                 data: formData,
                 type: 'POST',
                  dataType: 'json',
