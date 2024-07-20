@@ -709,6 +709,17 @@ footer{
 		}
 	}
 }
+footer .outer__footer{
+	&>a{
+		margin-right: auto;
+	}
+	top:0px;
+}
+footer .outer__footer .btns{
+	position: absolute;
+	right: 0px;
+	top:4px;
+}
 @media (max-width: 1280px){
 	.hero__section>.ellipse__left{
 		max-width: 220px;
@@ -1178,5 +1189,20 @@ header .mobile__menu{
 	.hero__section .outer__hero>h1{
 		font-size: 40px;
 		line-height: 48px;
+	}
+}
+@media (max-width: 400px){
+	footer .outer__footer .btns ul{
+		margin-right: 15px;
+	}
+	footer .outer__footer>a img{
+		min-width: 120px;
+		max-width: 120px;
+	}
+	footer .outer__footer .btns>a{
+		min-height: 40px;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 14px;
 	}
 }
